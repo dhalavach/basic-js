@@ -16,8 +16,8 @@ const { NotImplementedError } = require("../extensions/index.js");
  *
  */
 function renameFiles(names) {
-  var c = {},
-    t = (x, n) => x + "(" + n + ")";
+  let c = {};
+  let t = (x, n) => x + "(" + n + ")";
 
   return names.map(function (x) {
     let n = c[x] || 0;
