@@ -20,7 +20,7 @@ function renameFiles(names) {
     t = (x, n) => x + "(" + n + ")";
 
   return names.map(function (x) {
-    var n = c[x] || 0;
+    let n = c[x] || 0;
 
     c[x] = n + 1;
 
